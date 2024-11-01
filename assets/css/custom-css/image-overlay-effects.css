@@ -1,0 +1,106 @@
+/* Template One Css */
+.trad-image-overlay-template-one-container {
+    position: relative;
+    width: 100%;
+}
+  
+.trad-image-overlay-template-one-image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+  
+.trad-image-overlay-template-one-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 1s;
+    background-color: #008CBA;
+}
+  
+.trad-image-overlay-template-one-container:hover 
+.trad-image-overlay-template-one-overlay {
+    opacity: 1;
+}
+  
+.trad-image-overlay-template-one-text {
+    color: white;
+    font-size: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+
+}
+.trad-image-overlay-template-one-text
+.trad-image-overlay-template-one-text-title {
+   display: flex;
+   align-items: center;
+   justify-content: center !important;
+   margin: 25px 0 10px 0 !important;
+}
+
+.trad-image-overlay-template-one-social-icons {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    margin-top: 10px; /* Add some space above the icons */
+}
+.trad-image-overlay-template-one-social-icons i{
+   margin-left: -10px !important;
+   padding: 0 !important;
+   gap: 5px;
+}
+
+/* Template Two Css */
+
+.trad-image-overlay-template-two-container {
+    position: relative;
+    width: 100%;
+}
+  
+.trad-image-overlay-template-two-image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+  
+.trad-image-overlay-template-two-middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+  
+.trad-image-overlay-template-two-container:hover 
+.trad-image-overlay-template-two-image {
+    opacity: 0.3;
+}
+  
+.trad-image-overlay-template-two-container:hover 
+.trad-image-overlay-template-two-middle {
+    opacity: 1;
+}
+  
+.trad-image-overlay-template-two-text {
+    background-color: #04AA6D;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+  

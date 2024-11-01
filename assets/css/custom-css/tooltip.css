@@ -1,0 +1,72 @@
+.trad-tooltip-container {
+    position: relative;
+    display: inline-block;
+}
+
+.trad-tooltip {
+    /* Existing styles */
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    position: absolute;
+    border-radius: 5px;
+    padding: 5px;
+    z-index: 10;
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
+/* Responsive styles remain unchanged */
+
+
+.trad-tooltip-container:hover .trad-tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+.trad-tooltip-container[data-position="top"] .trad-tooltip {
+    bottom: 100%; /* Position above the target */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.trad-tooltip-container[data-position="bottom"] .trad-tooltip {
+    top: 100%; /* Position below the target */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.trad-tooltip-container[data-position="left"] .trad-tooltip {
+    top: 50%;
+    right: 100%; /* Position to the left of the target */
+    transform: translateY(-50%);
+}
+
+.trad-tooltip-container[data-position="right"] .trad-tooltip {
+    top: 50%;
+    left: 100%; /* Position to the right of the target */
+    transform: translateY(-50%);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .trad-tooltip {
+        font-size: 12px; /* Reduce font size on smaller screens */
+        padding: 8px; /* Add more padding for touch targets */
+    }
+}
+
+@media (max-width: 480px) {
+    .trad-tooltip {
+        font-size: 10px; /* Further reduce font size on extra small screens */
+        padding: 6px; /* Adjust padding */
+        width: auto; /* Allow the tooltip to adjust width */
+    }
+
+    .trad-tooltip-container[data-position="top"] .trad-tooltip,
+    .trad-tooltip-container[data-position="bottom"] .trad-tooltip,
+    .trad-tooltip-container[data-position="left"] .trad-tooltip,
+    .trad-tooltip-container[data-position="right"] .trad-tooltip {
+        left: 50%; /* Center the tooltip on small screens */
+        transform: translateX(-50%);
+    }
+}

@@ -1,0 +1,15 @@
+.trad-fancy-text {
+    display: flex;
+    align-items: center;
+}
+
+.trad-fancy-text 
+.primary {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.trad-fancy-text 
+.secondary {
+    margin-left: 10px;
+}

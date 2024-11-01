@@ -1,0 +1,29 @@
+:root {
+    --icon-size: 30px;
+    --icon-space: 10px; /* Default space between icons */
+}
+
+.trad-social-icons {
+    display: flex;
+    flex-direction: row; /* Default orientation */
+    align-items: center;
+}
+
+.trad-social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: var(--icon-space); /* Space between icons */
+    position: relative;
+    font-size: var(--icon-size); /* Icon size */
+    transition: color 0.3s ease;
+}
+
+.trad-social-icon i {
+    color: currentColor; /* Use the color from inline styles or JS */
+}
+
+.trad-social-icon 
+.trad-social-title {
+    display: none; /* Hide title by default */
+}

@@ -1,0 +1,64 @@
+.trad-team-carousel {
+    display: flex;
+    overflow: hidden;
+    flex-wrap: nowrap;
+    gap: 20px;
+}
+
+.trad-team-member {
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.trad-team-member img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.trad-team-info {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    text-align: center;
+    color: #fff;
+    transition: background-color 0.3s ease;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.trad-team-title {
+    font-size: 24px;
+    color: #FFD700;
+}
+
+.trad-team-description {
+    font-size: 16px;
+    color: #f0f0f0;
+}
+
+.trad-team-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #ff7f50;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.trad-team-button:hover {
+    background-color: #ff4500;
+}
+
+/* .team-icon {
+    color: #4CAF50;
+    font-size: 24px;
+}
+
+.team-icon:hover {
+    color: #FF5722;
+} */

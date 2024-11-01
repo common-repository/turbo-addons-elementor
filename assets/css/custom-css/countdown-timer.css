@@ -1,0 +1,69 @@
+.trad-countdown-main {
+    text-align: center;
+}
+
+.trad-countdown {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.trad-countdown div {
+    text-align: center;
+    box-shadow: 1px 1px 15px rgba(0,0,0,0.25);
+    margin-top: 50px;
+    border-radius: 5px;
+    padding: 20px;
+    width: 100px;
+}
+
+.trad-countdown div span {
+    display: block;
+}
+
+.trad-countdown .trad-number {
+    font-size: 48px;
+    font-weight: bold;
+    color: #CAA78C;
+}
+
+.trad-countdown div span:last-of-type {
+    font-size: 18px;
+    font-weight: normal;
+    color: #2C4A64;
+}
+
+/* Responsive for smaller devices */
+@media (max-width: 768px) {
+    .trad-countdown div {
+        width: 80px; /* Reduce the width */
+        padding: 15px; /* Adjust padding */
+    }
+
+    .trad-countdown .trad-number {
+        font-size: 36px; /* Smaller number font size */
+    }
+
+    .trad-countdown div span:last-of-type {
+        font-size: 14px; /* Smaller label font size */
+    }
+}
+
+@media (max-width: 480px) {
+    .trad-countdown {
+        gap: 10px; /* Reduce gap between items */
+    }
+
+    .trad-countdown div {
+        width: 60px; /* Further reduce the width */
+        padding: 10px; /* Adjust padding for extra small screens */
+    }
+
+    .trad-countdown .trad-number {
+        font-size: 28px; /* Smaller number font size */
+    }
+
+    .trad-countdown div span:last-of-type {
+        font-size: 12px; /* Smaller label font size */
+    }
+}

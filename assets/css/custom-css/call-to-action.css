@@ -1,0 +1,112 @@
+.clearfix {
+    clear: both;
+}
+
+.trad-wrapper-full {
+    position: relative;
+    max-width: 100%; /* Changed from fixed width to 100% */
+    margin: 0 auto;
+    background-color: #3686BE;
+    padding: 50px 20px; /* Add some padding for better layout on small devices */
+}
+
+.trad-cta-wrapper {
+    text-align: left;
+    padding: 28px;
+    border-radius: 3px;
+}
+
+.trad-details-wrapper {
+    float: left;
+    width: 60%;
+}
+
+.trad-details-wrapper h2 {
+    font-weight: 600;
+    margin: 0 0 4px 0;
+    color: #FFF;
+    font-size: 27px;
+}
+
+.trad-details-wrapper p {
+    font-size: 18px;
+    color: #FFF;
+}
+
+.trad-blue-cta-button {
+    padding: 17px 50px;
+    text-transform: uppercase;
+    background-color: #93CC76;
+    color: #FFF;
+    letter-spacing: 0.1em;
+    border-radius: 3px;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    float: right;
+    color: #3686BE;
+    background-color: #FFF;
+    padding: 17px 0;
+    width: 40%;
+    text-align: center;
+}
+
+/* Tablet view adjustments */
+@media (max-width: 1024px) {
+    .trad-wrapper-full {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .trad-details-wrapper {
+        width: 100%;
+        text-align: center;
+        float: none;
+        margin-bottom: 20px;
+    }
+
+    .trad-details-wrapper h2 {
+        font-size: 24px;
+    }
+
+    .trad-details-wrapper p {
+        font-size: 16px;
+    }
+
+    .trad-blue-cta-button {
+        width: 100%;
+        float: none;
+        padding: 15px 0;
+    }
+}
+
+/* Mobile view adjustments */
+@media (max-width: 767px) {
+    .trad-wrapper-full {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .trad-details-wrapper {
+        width: 100%;
+        text-align: center;
+        float: none;
+        margin-bottom: 20px;
+    }
+
+    .trad-details-wrapper h2 {
+        font-size: 22px;
+    }
+
+    .trad-details-wrapper p {
+        font-size: 14px;
+    }
+
+    .trad-blue-cta-button {
+        width: 100%;
+        float: none;
+        padding: 12px 0;
+        font-size: 16px;
+    }
+}
